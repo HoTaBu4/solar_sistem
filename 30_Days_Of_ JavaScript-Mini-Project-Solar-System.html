@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/30_Days_Of_ JavaScript-Mini-Project-Solar-System.css" type="text/css">
+</head>
+<body>
+    <div class="wrapper container">
+        <header class="header">
+            <h1>
+               Calculate a weight of an object in a planet
+            </h1>
+        </header>
+        <main class="main container">
+            <form class="form">
+                <input type="text" placeholder="mass in kg" id="text">
+                    <div class="containerB">
+                    <div class="container_planet">
+                        <span id="span">
+                            choose a planet
+                        </span> 
+                        <div class="image">
+                            <img  id="img" src="/img/favicon-16x16.png" alt="">
+                        </div>
+                    </div>
+                    <ul class="container_menu" id="menu">
+                        <li value="0" >Mercury</li>
+                        <li value="1">Earth</li>
+                        <li value="2">Moon</li>
+                        <li value="3">Jupiter</li>
+                        <li value="4">Neptune</li>
+                        <li value="5">Uranus</li>
+                        <li value="6">Venus</li>
+                        <li value="7">Saturn</li>
+                    </ul>
+                </div>
+                <button class="button" type="button" onclick="tap()">calculate weight</button>
+            </form>
+            <div id="log">
+                
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script src="/30_Days_Of_ JavaScript-Mini-Project-Solar-System.js"></script>
+</body>
+</html>

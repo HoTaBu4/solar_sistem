@@ -1,0 +1,90 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+body{
+    height: 100%;
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+h1{
+    color: white;
+    letter-spacing: 0.1em;
+}
+.button{
+    background-color: rgb(116, 116, 116);
+    border: none;
+}
+.wrapper{
+    display: flex;
+    min-height: 100%;
+    min-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/img/galaxy.gif);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.form{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 5px;
+}
+.button{
+    height: 30px;
+    width: 140px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    font-size:17px; 
+}
+.button:hover{
+    background-color: rgb(88, 87, 87);
+    transition: 0.3s ease all;
+    color: rgb(216, 236, 236);
+}
+#text{
+    min-height: 31px;
+    border-radius: 5px;
+}
+.container_planet{
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.container_planet > span{
+    color: gray;
+}
+
+.container_menu{
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: gray;
+    padding: 0px 0px 0px 15px;
+    margin: 0px 0px; 
+    opacity: 0.9;
+    border-radius: 5px;
+    z-index: 100;
+    width: 150px;
+}
+
+.visible{
+    display: block;
+}
+#menu{
+    background-image: url(/img/favicon-16x16.png) no-repeat
+
+}
+
