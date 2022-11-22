@@ -1,5 +1,5 @@
 const mass = ["/img/platens/mercury.png","/img/platens/earth.png","/img/platens/moon.png","/img/platens/jupiter.png","/img/platens/neptune.png","/img/platens/uranus.png","/img/platens/venus.png","/img/platens/saturn.png"]
-
+const freeFallAcceleration =[3.703,9.822,1.625,25.93,11.28,9.01,8.872,11.19]
 let num;
 
 document.addEventListener('click',(event) =>{
@@ -25,7 +25,7 @@ function tap(){
     let planetName = document.getElementById('span')
     let error = document.getElementsByClassName('.errors')
 
-     
+     console.log(typeof logs.innerHTML !== null);
     if(typeof logs.innerHTML !== null){
         logs.innerHTML = ''
         logs.style.cssText=''
@@ -66,7 +66,7 @@ function tap(){
                 </h3>
             </div>
             <div class="output_result">
-                ${'math'}
+                ${Math.floor(textInput.value * freeFallAcceleration[num])} N
             </div>`
 
         logs.prepend(image)
